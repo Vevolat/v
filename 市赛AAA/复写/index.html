@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+.z{
+	height:960px;
+	width:600px;
+}
+	</style>
+</head>
+<body>
+    <div id="main" class="z" ></div>
+    <script src="echarts5.4.3.js"></script>
+    <script type="text/javascript">
+      var mCharts = echarts.init(document.getElementById('main'));
+	  var option = {
+		  title: {
+			  text: '2024成都平均气温'
+		  },
+		  length: {
+			  data: ['平均最低气温', '平均最高气温']
+		  },
+          yAxis: {
+              type: 'value',
+              boundaryGap: [0, 0.01],
+              name: '℃', // 设置y轴单位
+              nameLocation: 'end', // 设置单位显示在y轴的末端
+              nameTextStyle: { // 设置单位的样式
+                  align: 'right',
+                  verticalAlign: 'middle',
+                  padding: [0, 0, 0, 20] // 调整单位与y轴的距离
+              },
+		      axisLabel: {
+		          formatter: '{value} ℃' // 在y轴标签上显示单位
+		      }
+		  },
+		  xAxis: {
+		      type: 'category',
+		      data: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+		  },
+		  series: [
+		      {
+		          name: '平均最低温',
+		          type: 'bar',
+		          label: {
+		            show: true,
+		            position: 'top',
+		            formatter: '{c} ℃' // 在数据标签上显示单位
+		          },
+		          data: [9, 8.3, 11.3, 13.3, 17.8, 20.9, 23.3, 22.1, 20.5, 14.4, 8, 5.4]
+		      },
+		      {
+		          name: '平均最高温',
+		          type: 'bar',
+		          label: {
+		            show: true,
+		            position: 'top',
+		            formatter: '{c} ℃' 
+		          },
+		          data: [10.3, 17.7, 19.7, 21.3, 26.3, 28.7, 31.8, 29.5, 28.1, 19.6, 14.4, 11.6]
+		      },
+		  ]
+	  };
+      mCharts.setOption(option);
+    </script>
+</body>
+</html>

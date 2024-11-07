@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='model_sen' inline='true' name='federated.10zkwey0y7cres10uzp7j18t3hpf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='model_sen' name='textscan.04r8u5r1lhbcxn104fjpo16i22fw'>
+            <connection class='textscan' directory='C:/Users/Admin/Desktop/V/试炼/04' filename='model_sen.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.04r8u5r1lhbcxn104fjpo16i22fw' name='model_sen.csv' table='[model_sen#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='编号' ordinal='0' />
+            <column datatype='string' name='手机品牌' ordinal='1' />
+            <column datatype='string' name='评论信息' ordinal='2' />
+            <column datatype='string' name='备注' ordinal='3' />
+            <column datatype='string' name='情感分析' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.04r8u5r1lhbcxn104fjpo16i22fw' name='model_sen.csv' table='[model_sen#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='编号' ordinal='0' />
+            <column datatype='string' name='手机品牌' ordinal='1' />
+            <column datatype='string' name='评论信息' ordinal='2' />
+            <column datatype='string' name='备注' ordinal='3' />
+            <column datatype='string' name='情感分析' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[model_sen.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;￥&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>编号</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[编号]</local-name>
+            <parent-name>[model_sen.csv]</parent-name>
+            <remote-alias>编号</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>手机品牌</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[手机品牌]</local-name>
+            <parent-name>[model_sen.csv]</parent-name>
+            <remote-alias>手机品牌</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>评论信息</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[评论信息]</local-name>
+            <parent-name>[model_sen.csv]</parent-name>
+            <remote-alias>评论信息</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>备注</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[备注]</local-name>
+            <parent-name>[model_sen.csv]</parent-name>
+            <remote-alias>备注</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>情感分析</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[情感分析]</local-name>
+            <parent-name>[model_sen.csv]</parent-name>
+            <remote-alias>情感分析</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='model_sen.csv' datatype='table' name='[__tableau_internal_object_id__].[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='%null%' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='model_sen.csv' id='model_sen.csv_5498C2AA33D6496083D909C1CB295BEE'>
+            <properties context=''>
+              <relation connection='textscan.04r8u5r1lhbcxn104fjpo16i22fw' name='model_sen.csv' table='[model_sen#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='编号' ordinal='0' />
+                  <column datatype='string' name='手机品牌' ordinal='1' />
+                  <column datatype='string' name='评论信息' ordinal='2' />
+                  <column datatype='string' name='备注' ordinal='3' />
+                  <column datatype='string' name='情感分析' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='model_sen' name='federated.10zkwey0y7cres10uzp7j18t3hpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10zkwey0y7cres10uzp7j18t3hpf'>
+            <_.fcp.ObjectModelTableType.false...column caption='model_sen.csv' datatype='integer' name='[__tableau_internal_object_id__].[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:model_sen.csv_5498C2AA33D6496083D909C1CB295BEE:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='model_sen.csv' datatype='table' name='[__tableau_internal_object_id__].[model_sen.csv_5498C2AA33D6496083D909C1CB295BEE]' role='measure' type='quantitative' />
+            <column-instance column='[情感分析]' derivation='None' name='[none:情感分析:nk]' pivot='key' type='nominal' />
+            <column-instance column='[编号]' derivation='Sum' name='[sum:编号:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[情感分析]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[编号]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10zkwey0y7cres10uzp7j18t3hpf].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.10zkwey0y7cres10uzp7j18t3hpf].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10zkwey0y7cres10uzp7j18t3hpf].[Multiple Values]</rows>
+        <cols>[federated.10zkwey0y7cres10uzp7j18t3hpf].[none:情感分析:nk]</cols>
+      </table>
+      <simple-id uuid='{6DAA5529-68B5-4B13-BB10-C270FC51817B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10zkwey0y7cres10uzp7j18t3hpf].[none:情感分析:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{58D22316-E6FA-410E-888A-6C4570805DF3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
