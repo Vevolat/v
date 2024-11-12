@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>基于Echarts的数据可视化分析</title>
+  <style>
+#main{
+  width: 100%;
+  height: 700px;
+}
+  </style>
+</head>
+
+<body>
+  <div id="main"></div>
+  <script src="./echarts5.4.3.js"></script>
+  <script>
+    var e = echarts.init(document.getElementById('main'));
+    var option = {
+      title: {
+        text: '2024成都平均温度'
+      },
+      legend: {
+      },
+      yAxis: {
+        name: '℃',
+        type: 'value'
+      },
+      xAxis: {
+        type: 'category',
+        data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+      },
+      series: [
+        {
+          name: '平均最高气温',
+          type: 'bar',
+          label: {
+            show: true,
+            position: 'top',
+            formatter: '{c}℃',
+          },
+          data: [10.3,17.7,19.7,21.3,26.3,28.7,31.8,29.5,28.1,19.6,14.4,11.6]
+        },
+        {
+          name: '平均最低气温',
+          type: 'bar',
+          label: {
+            show: true,
+            formatter: '{c}℃',
+            position: 'top',
+          },
+          data: [3.1,8.3,11.3,13.3,17.8,20.9,23.3,22.1,20.5,14.4,8,5.4]
+        },
+      ]
+    };
+    e.setOption(option);
+  </script>
+</body>
+</html>
